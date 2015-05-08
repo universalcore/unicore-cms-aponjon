@@ -50,7 +50,10 @@
       </div>
     </div>
     <div id="footer">
-        <span>&copy; 2014 Baby Center | Aponjon | <a href="/about/" i18n:translate="About">About</a></span>
+        <span>&copy; 2015 Baby Center | Aponjon
+            <!--
+            | <a href="/about/" i18n:translate="About">About</a></span>
+            -->
     </div><!--/footer-->
 
   </div>
