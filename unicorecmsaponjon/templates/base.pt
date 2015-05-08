@@ -26,9 +26,9 @@
 
     <div id="header">
         <a href="/">
-          <img src="/static/img/logo-bc.png?v=2" border="0" />
-          <img src="/static/img/divider.png?v=2" border="0" />
-          <img src="/static/img/logo-aponjon.png?v=2" border="0" />
+          <img src="/static/img/logo-bc-square.png?v=2" border="0" />
+          <img src="/static/img/divider-bigger.png?v=2" border="0" />
+          <img src="/static/img/logo-aponjon-square.png?v=2" border="0" />
         </a>
     </div><!--/header-->
 
