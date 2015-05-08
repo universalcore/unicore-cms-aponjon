@@ -1,0 +1,18 @@
+name: unicore-cms-mama
+user: ubuntu
+buildscript: sideloader/deploy.sh
+postinstall: sideloader/postinstall.sh
+pip:
+ - gunicorn
+ - pyramid
+ - pyramid_chameleon
+ - pyramid_debugtoolbar
+ - pyramid_beaker
+ - python-memcached
+ - webtest
+ - waitress
+ - cornice
+dependencies:
+ - python-yaml
+ - cmake
+ - elasticsearch

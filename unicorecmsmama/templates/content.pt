@@ -1,0 +1,34 @@
+<div metal:use-macro="view.global_template"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="unicorecmsmama">
+    <div metal:fill-slot="content">
+        <div class="category-${primary_category.slug}">
+
+            <div class="h1">
+                <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
+            </div>
+
+            <div class="detail">
+                <div class="h3">${page.title}</div>
+                <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                    <img alt="img" src="${view.get_image_url(page.image_host, page.image, 350)}"/>
+                </condition>
+                <div>${structure:content}</div>
+                <div class="date">${view.format_date(page.created_at)}</div>
+
+            </div>
+
+            <div class="category-related" tal:condition="linked_pages">
+                <div class="h1" i18n:translate="More Information">More Information</div>
+                <div class="item" tal:repeat="linked_page linked_pages">
+                    <a href="/content/detail/${linked_page.uuid}/">${linked_page.title}</a>
+                </div>
+            </div>
+
+            <div class="pagi">
+                <a href="/content/list/${primary_category.uuid}/"><span i18n:translate="More">More</span> &gt;</a>
+            </div>
+
+        </div>
+    </div>
+</div>

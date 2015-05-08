@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      metal:define-macro="layout"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="unicorecmsmama"
+      dir="${view.get_language_direction()}">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>MAMA Mobile Community / Week-by-week guide to pregnancy and infants</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="description" content="mama.unicore.io is a week-by-week guide to pregnancy, birth and early childhood. It was founded by the Mobile Alliance for Maternal Action to put the power of health in every mama's hand.">
+    <meta name="keywords" content="moms,maternal,baby,pregnancy,pregnant,expectant,mama,askmama,ask,mother,pain,birth,help">
+    <link href="/static/css/style.css?20150223" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <div id="wrap">
+
+    <div class="locale" tal:condition="len(view.get_display_languages())>1">
+      <span tal:repeat="item view.get_display_languages()">
+        <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a> |
+      </span>
+      <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2" class="locale-change">&hellip;</a>
+    </div>
+
+    <div id="header">
+        <a href="/">
+          <img src="/static/img/logo-bc.png?v=2" border="0" />
+          <img src="/static/img/divider.png?v=2" border="0" />
+          <img src="/static/img/logo-mama.png?v=2" border="0" />
+        </a>
+    </div><!--/header-->
+
+    <div id="nav" metal:define-slot="nav">
+        <a href="/" i18n:translate="Home">Home</a>
+        <span tal:repeat="cat view.get_top_nav">
+        <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
+      </span>
+    </div>
+
+    <div id="content">
+      <div metal:define-slot="content"></div>
+
+      <div id="menu" metal:define-slot="menu">
+          <span tal:repeat="cat view.get_top_nav">
+            <a href="/content/list/${cat.uuid}/">${cat.title}</a>
+            <span omit-tag="" tal:condition="not repeat.cat.end"> |</span>
+          </span>
+      </div>
+    </div>
+    <div id="footer">
+        <span>&copy; 2014 Baby Center | MAMA</span>
+    </div><!--/footer-->
+
+  </div>
+  </body>
+</html>

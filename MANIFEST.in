@@ -1,0 +1,3 @@
+include requirements.txt
+recursive-include unicorecmsmama *
+recursive-include mappings *

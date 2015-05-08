@@ -1,0 +1,11 @@
+<div metal:use-macro="view.global_template">
+<div metal:fill-slot="nav"></div>
+<div metal:fill-slot="menu"></div>
+<div metal:fill-slot="content">
+    <div>
+        <div class="item" tal:repeat="lang languages">
+            <a href="/locale/${lang[0]}/">${lang[1]}</a>
+        </div>
+    </div>
+</div>
+</div>
