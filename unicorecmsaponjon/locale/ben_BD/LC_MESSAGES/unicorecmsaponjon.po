@@ -1,41 +1,40 @@
 #
-# SOME DESCRIPTIVE TITLE
+# Language ben translations for PACKAGE package
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# tonym <tonym@tonym-lap>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-22 10:33+0200\n"
-"PO-Revision-Date: 2015-02-09 14:44+0000\n"
-"Last-Translator: Tash <tash@praekelt.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ind_ID\n"
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2015-05-08 13:40+0200\n"
+"PO-Revision-Date: 2015-05-08 13:40+0200\n"
+"Last-Translator: tonym <tonym@tonym-lap>\n"
+"Language-Team: Language ben\n"
+"Language: ben_BD\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1423493099.529729\n"
+"Generated-By: Lingua 3.10\n"
 
 #. Default: Advice from experts and parents
 #: unicorecmsaponjon/templates/home.pt:5
 msgid "Advice from experts and parents"
-msgstr "Saran dari pakar dan orang tua"
+msgstr ""
 
 #. Default: Recommended
 #: unicorecmsaponjon/templates/home.pt:10
 msgid "Recommended"
-msgstr "Disarankan"
+msgstr ""
 
 #. Default: More
-#: unicorecmsaponjon/templates/home.pt:36 unicorecmsaponjon/templates/content.pt:29
+#: unicorecmsaponjon/templates/home.pt:36
+#: unicorecmsaponjon/templates/content.pt:29
 msgid "More"
-msgstr "Lebih"
+msgstr ""
 
 #. Default: More Information
 #: unicorecmsaponjon/templates/content.pt:22
 msgid "More Information"
-msgstr "Informasi lebih lanjut"
+msgstr ""
 
 #. Default: 1 search result for:
 #: unicorecmsaponjon/templates/search_results.pt:7
@@ -70,9 +69,8 @@ msgstr ""
 #. Default: Home Page
 #. Used in sentence: "Go to the <dynamic element>"
 #: unicorecmsaponjon/templates/404.pt:11
-#, fuzzy
 msgid "Home Page"
-msgstr "Halaman utama"
+msgstr ""
 
 #. Default: Go to the <dynamic element>
 #: unicorecmsaponjon/templates/404.pt:10
@@ -98,8 +96,9 @@ msgstr ""
 #. Default: Home
 #: unicorecmsaponjon/templates/base.pt:36
 msgid "Home"
-msgstr "Halaman utama"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Advice to help you care for your family from experts &amp; moms"
-#~ msgstr "Saran dari pakar dan orang tua"
+#. Default: About
+#: unicorecmsaponjon/templates/base.pt:53
+msgid "About"
+msgstr ""
