@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -a unicore-cms-mama ./build/
+cp -a unicore-cms-aponjon ./build/

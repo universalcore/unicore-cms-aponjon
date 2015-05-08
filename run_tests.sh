@@ -1,2 +1,2 @@
 #!/bin/bash
-py.test --verbose --cov ./unicorecmsmama unicorecmsmama
+py.test --verbose --cov ./unicorecmsaponjon unicorecmsaponjon
