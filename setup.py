@@ -6,7 +6,7 @@ with open(os.path.join(here, 'requirements.txt'), 'r') as fp:
     requires = filter(None, fp.readlines())
 
 setup(name='unicore-cms-aponjon',
-      version='0.2',
+      version='0.1.0',
       description='Aponjon Pyramid Frontend Site for Universal Core ',
       long_description='Aponjon Pyramid Frontend Site for Universal Core ',
       classifiers=[

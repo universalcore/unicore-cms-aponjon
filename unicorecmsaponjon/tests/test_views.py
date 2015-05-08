@@ -89,8 +89,5 @@ class TestViews(UnicoreTestCase):
 
         # check locale with translation
         self.assertTrue(
-            '<div id="banner">Saran dari pakar dan orang tua</div>' in
-            localise_logo('ind_ID', None))  # falls back to translation files
-        self.assertTrue(
             '<div id="banner">Advice foo</div>' in
             localise_logo('ind_ID', 'Advice foo'))
