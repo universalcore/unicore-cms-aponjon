@@ -23,6 +23,9 @@
 
         <div class="category-${cat.slug}" tal:repeat="cat view.get_categories()">
             <div class="h1">${cat.title}</div>
+            <div class="pagi" tal:condition="cat.slug == 'aponjon'">
+              <a href="/aponjon/"><span i18n:translate="Sign up for Aponjon messaging service">Sign up for Aponjon messaging service &gt;</span></a>
+            </div>
             <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)" >
                 <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
                         <img alt="img" src="${view.get_image_url(page.image_host, page.image, 45, 45)}"/>
