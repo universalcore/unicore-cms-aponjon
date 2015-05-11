@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content="mama.unicore.io is a week-by-week guide to pregnancy, birth and early childhood. It was founded by the Mobile Alliance for Maternal Action to put the power of health in every mama's hand.">
     <meta name="keywords" content="moms,maternal,baby,pregnancy,pregnant,expectant,mama,askmama,ask,mother,pain,birth,help">
-    <link href="/static/css/style.css?20150223" rel="stylesheet" type="text/css" />
+    <link href="/static/css/style.css?20150511" rel="stylesheet" type="text/css" />
   </head>
   <body>
   <div id="wrap">
@@ -32,12 +32,9 @@
         </a>
     </div><!--/header-->
 
-    <div id="nav" metal:define-slot="nav">
-        <a href="/" i18n:translate="Home">Home</a>
-        <span tal:repeat="cat view.get_top_nav">
-        <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
-      </span>
-    </div>
+    <div id="banner" style="display:none" i18n:translate="Advice from experts and parents">Advice from experts and parents</div>
+    <div id="banner" tal:define="l view.get_localisation(); logo_text l.logo_text if (l and l.logo_text) else translate('Advice from experts and parents', domain='unicorecmsaponjon')" tal:content="logo_text">
+    </div><!--/banner-->
 
     <div id="content">
       <div metal:define-slot="content"></div>

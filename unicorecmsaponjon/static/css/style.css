@@ -41,7 +41,7 @@
 
 /*  BANNER  */
 
-	#banner { padding: 10px 16px; font-size: 20px; color: #666666; line-height: 26px; font-weight: bold; }
+	#banner { padding: 10px 16px; font-size: 20px; color: #666666; line-height: 26px; font-weight: bold; text-align: center;}
 		#banner a { color: #666666; }
 		#banner img { width: 100%; display: block; }
 
