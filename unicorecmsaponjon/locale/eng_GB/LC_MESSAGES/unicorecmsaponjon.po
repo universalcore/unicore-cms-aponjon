@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-05-08 13:40+0200\n"
+"POT-Creation-Date: 2015-05-12 12:45+0200\n"
 "PO-Revision-Date: 2015-05-08 13:40+0200\n"
 "Last-Translator: tonym <tonym@tonym-lap>\n"
 "Language-Team: Language eng\n"
@@ -15,18 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Lingua 3.10\n"
 
-#. Default: Advice from experts and parents
-#: unicorecmsaponjon/templates/home.pt:5
-msgid "Advice from experts and parents"
-msgstr ""
-
-#. Default: Recommended
-#: unicorecmsaponjon/templates/home.pt:10
-msgid "Recommended"
+#. Default: Sign up for Aponjon messaging service &gt;
+#: unicorecmsaponjon/templates/home.pt:8
+msgid "Sign up for Aponjon messaging service"
 msgstr ""
 
 #. Default: More
-#: unicorecmsaponjon/templates/home.pt:36
+#: unicorecmsaponjon/templates/home.pt:20
 #: unicorecmsaponjon/templates/content.pt:29
 msgid "More"
 msgstr ""
@@ -93,12 +88,7 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#. Default: Home
-#: unicorecmsaponjon/templates/base.pt:36
-msgid "Home"
-msgstr ""
-
-#. Default: About
-#: unicorecmsaponjon/templates/base.pt:53
-msgid "About"
+#. Default: Advice from experts and parents
+#: unicorecmsaponjon/templates/base.pt:35
+msgid "Advice from experts and parents"
 msgstr ""
