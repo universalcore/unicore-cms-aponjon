@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-11 19:46+0200\n"
-"PO-Revision-Date: 2015-05-11 18:49+0000\n"
+"PO-Revision-Date: 2015-05-14 12:51+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ben_BD\n"
@@ -16,12 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 2.5.1.1\n"
 "Generated-By: Lingua 3.10\n"
-"X-POOTLE-MTIME: 1431370144.999293\n"
+"X-POOTLE-MTIME: 1431607880.345483\n"
 
 #. Default: Sign up for Aponjon messaging service &gt;
 #: ./unicorecmsaponjon/templates/home.pt:8
 msgid "Sign up for Aponjon messaging service"
 msgstr ""
+"আপনার ও আপনার শিশুর জন্য স্বাস্থ্যতথ্য বার্তা (আপনার মোবাইলে) পেতে নিবন্ধন "
+"করুন"
 
 #. Default: More
 #: ./unicorecmsaponjon/templates/home.pt:20
